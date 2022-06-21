@@ -4,9 +4,14 @@
 }
 
 .sidebar {
-    grid-row: 2;
+    color: white;
+    background-color: lightblue;
+    display: grid;
+    grid-row: 2 / 5;
+
 }
 
+/* Header first row */
 .header {
     display: grid;
     grid-column: 2;
@@ -32,6 +37,7 @@
 
 }
 
+/* Header second row */
 .greeting {
     display: grid;
 }
@@ -44,3 +50,9 @@
 .main-content {
 
 }
+
+.projects {
+    display: grid;
+    grid-column: 2;
+}
+
