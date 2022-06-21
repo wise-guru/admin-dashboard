@@ -48,11 +48,14 @@
 }
 
 .main-content {
-
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
 .projects {
     display: grid;
-    grid-column: 2;
+    grid-column: 1;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));;
+    grid-template-rows: repeat(2, 1fr);
 }
 
