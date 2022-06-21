@@ -1,0 +1,46 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.sidebar {
+    grid-row: 2;
+}
+
+.header {
+    display: grid;
+    grid-column: 2;
+    grid-template-columns: 1fr 2fr;
+}
+
+.searchbar {
+    align-self: start;
+}
+
+.top-right-icons {
+    align-self: center;
+}
+
+.top-right-icons ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+}
+
+
+.top-right-icons li {
+
+}
+
+.greeting {
+    display: grid;
+}
+
+.header-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.main-content {
+
+}
