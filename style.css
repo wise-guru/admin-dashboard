@@ -2,6 +2,7 @@ body {
     background-color: #e2e8f0;
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 .container {
@@ -48,7 +49,7 @@ li {
 .header {
     display: grid;
     grid-column: 2;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     background-color: #fff;
 }
 
@@ -58,6 +59,15 @@ li {
     grid-auto-flow: column;
     justify-content: start;
     gap: 8px;
+    margin-left: 10%;
+
+}
+
+#search-bar {
+    border-radius: 16px;
+    width: 32rem;
+    border: none;
+    background-color: #e2e8f0;
 }
 
 .top-right-icons {
@@ -72,10 +82,6 @@ li {
     justify-content: end;
 }
 
-
-.top-right-icons li {
-
-}
 
 .profile-pic-1 {
     height: 50px;
@@ -92,6 +98,8 @@ li {
 .greeting {
     display: grid;
     grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
 }
 
 .greeting-content {
@@ -111,10 +119,32 @@ li {
 .header-buttons {
     display: grid;
     grid-auto-flow: column;
+    justify-content: end;
+    align-items: center;
+    gap: 16px;
+    margin-right: 10%;
 }
 
+.header-buttons button {
+    border-radius: 15px;
+    background-color: #1992d4;
+    color: #fff;
+    height: 2rem;
+    width: 6rem;
+    border: none;
+
+}
 /*Main section*/
 
+.main-content h4 {
+    margin: 15px;
+}
+
+.project, .announcements, .trending-tab {
+    border-radius: 10px;
+    padding: 15px;
+    
+}
 
 .main-content {
     display: grid;
@@ -134,6 +164,7 @@ li {
 .project {
     background-color: #fff;
     height: 200px;
+   
 
 }
 
@@ -142,6 +173,7 @@ li {
 .announcements {
     display: grid;
     background-color: #fff;
+    margin: 15px;
 }
 
 .trending {
@@ -153,4 +185,22 @@ li {
 .trending-tab {
     display: grid;
     background-color: #fff;
+    gap: 8px;
 }
+
+.trending-content {
+    display: grid;
+    justify-content: start;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 8px;
+}
+
+
+
+.trending-img {
+    height: 3rem;
+    width: 3rem;
+}
+
+
