@@ -15,6 +15,25 @@ body {
 
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    display: grid;
+}
+
+li {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
+    gap: 16px;
+}
+
+.dash-links {
+    display: grid;
+}
+
+
 /* Header first row */
 .header {
     display: grid;
