@@ -13,7 +13,7 @@ body {
 
 .sidebar {
     color: white;
-    background-color: #1992d4;
+    background-color: #10b981;
     display: grid;
     grid-row: 1 / 5;
 
@@ -43,6 +43,15 @@ li {
     display: grid;
 }
 
+.dash-links li:hover {
+    background-color: #10c98b;
+    cursor: pointer;
+}
+
+.dash-links li:active {
+    background-color:#10ac78;
+    cursor: pointer;
+}
 
 
 /* Header first row */
@@ -51,6 +60,7 @@ li {
     grid-column: 2;
     grid-template-columns: 2fr 1fr;
     background-color: #fff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.15);
 }
 
 .search-container {
@@ -100,6 +110,7 @@ li {
     grid-auto-flow: column;
     justify-content: start;
     align-items: center;
+    margin-left: 3%;
 }
 
 .greeting-content {
@@ -127,12 +138,20 @@ li {
 
 .header-buttons button {
     border-radius: 15px;
-    background-color: #1992d4;
+    background-color: #10b981;
     color: #fff;
     height: 2rem;
     width: 6rem;
     border: none;
+}
 
+button:hover {
+    background-color:#10c98b;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #10ac78;
 }
 /*Main section*/
 
@@ -140,9 +159,14 @@ li {
     margin: 15px;
 }
 
+.title {
+    font-weight: bold;
+}
+
 .project, .announcements, .trending-tab {
     border-radius: 10px;
     padding: 15px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     
 }
 
@@ -164,6 +188,7 @@ li {
 .project {
     background-color: #fff;
     height: 200px;
+    
    
 
 }
@@ -174,6 +199,11 @@ li {
     display: grid;
     background-color: #fff;
     margin: 15px;
+}
+
+.announcement-content .description {
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
 }
 
 .trending {
@@ -196,11 +226,12 @@ li {
     gap: 8px;
 }
 
-
-
 .trending-img {
     height: 3rem;
     width: 3rem;
 }
 
+.headline {
+    color: #bbb8b8;
+}
 
