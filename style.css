@@ -1,10 +1,13 @@
 body {
     background-color: #e2e8f0;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
+    
 }
 
 .sidebar {
@@ -15,8 +18,14 @@ body {
 
 }
 
+
+.dashboard p {
+    font-size: 24px;
+}
+
 ul {
     list-style-type: none;
+    padding: 16px;
     margin: 0;
     display: grid;
 }
@@ -34,6 +43,7 @@ li {
 }
 
 
+
 /* Header first row */
 .header {
     display: grid;
@@ -43,7 +53,11 @@ li {
 }
 
 .search-container {
-    
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    justify-content: start;
+    gap: 8px;
 }
 
 .top-right-icons {
@@ -52,13 +66,20 @@ li {
 
 .top-right-icons ul {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: column;
     list-style-type: none;
+    gap: 32px;
+    justify-content: end;
 }
 
 
 .top-right-icons li {
 
+}
+
+.header-profile-pic {
+    height: 50px;
+    width: 50px;
 }
 
 /* Header second row */
@@ -83,13 +104,16 @@ li {
 .projects {
     display: grid;
     grid-column: 1;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));;
     grid-template-rows: repeat(2, 1fr);
     gap: 15px;
+    margin: 15px;
+    height: 200px;
 }
 
 .project {
     background-color: #fff;
+
 }
 
 
@@ -102,5 +126,10 @@ li {
 .trending {
     display: grid;
     grid-column: 2;
+    margin: 15px;
+}
+
+.trending-tab {
+    display: grid;
     background-color: #fff;
 }
