@@ -13,8 +13,10 @@ body {
 
 .sidebar {
     color: white;
+    font-weight: bold;
     background-color: #10b981;
     display: grid;
+    grid-template-rows: 1fr 4fr 2fr;
     grid-row: 1 / 5;
 
 }
@@ -67,7 +69,7 @@ li {
     display: grid;
     align-items: center;
     grid-auto-flow: column;
-    justify-content: start;
+    justify-content: center;
     gap: 8px;
     margin-left: 10%;
 
@@ -75,6 +77,7 @@ li {
 
 #search-bar {
     border-radius: 16px;
+    height: 2rem;
     width: 32rem;
     border: none;
     background-color: #e2e8f0;
@@ -98,6 +101,10 @@ li {
     width: 50px;
 }
 
+.profile-pic-1:hover {
+    transform: scale(1.05);
+}
+
 /* Header second row */
 
 .profile-pic-2 {
@@ -111,11 +118,11 @@ li {
     justify-content: start;
     align-items: center;
     margin-left: 3%;
+    margin-bottom: 2%;
 }
 
 .greeting-content {
     display: grid;
-
 }
 
 .greeting-text {
@@ -140,6 +147,7 @@ li {
     border-radius: 15px;
     background-color: #10b981;
     color: #fff;
+    font-weight: bold;
     height: 2rem;
     width: 6rem;
     border: none;
@@ -186,24 +194,45 @@ button:active {
 }
 
 .project {
+    display: grid;
     background-color: #fff;
     height: 200px;
+    align-items: end;
+    border-left: solid 8px #0f1c51;
+}
+.project:hover {
+    transform: scale(1.025);
+    transition-duration: 200ms;
     
-   
-
 }
 
+.project-icons {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+}
+
+.project-icons img:hover, .top-right-icons img:hover {
+    cursor: pointer;
+}
+
+.project-icons img:active, .top-right-icons img:active {
+    transform: scale(0.93);
+}
 
 
 .announcements {
     display: grid;
     background-color: #fff;
     margin: 15px;
+    grid-template-rows: auto;
 }
 
-.announcement-content .description {
-    border-bottom: 1px solid black;
+.announcement-content .line {
+    display: grid;
+    border-bottom: solid rgb(0 0 0 / 0.1);
     padding-bottom: 8px;
+   
 }
 
 .trending {
@@ -232,6 +261,6 @@ button:active {
 }
 
 .headline {
-    color: #bbb8b8;
+    color: #858585;
 }
 
