@@ -161,7 +161,13 @@ button:hover {
 button:active {
     background-color: #10ac78;
 }
+
 /*Main section*/
+
+.main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
 
 .main-content h4 {
     margin: 15px;
@@ -176,11 +182,6 @@ button:active {
     padding: 15px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     
-}
-
-.main-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
 }
 
 
